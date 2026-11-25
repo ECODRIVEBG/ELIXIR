@@ -17,7 +17,7 @@ const formStatus = document.getElementById('formStatus');
 if (contactForm) {
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
-    formStatus.textContent = 'Missão recebida! Nossa equipe vai responder em breve.';
+    formStatus.textContent = 'Mensagem enviada, Nossa equipe vai responder em breve.';
     contactForm.reset();
   });
 }

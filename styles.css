@@ -597,6 +597,26 @@ textarea:focus-visible {
   color: var(--purple-700) !important;
 }
 
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+.value-card .card-icon {
+  margin-bottom: 20px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1rem;
+}
+.value-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+.value-card p {
+  color: var(--gray-500);
+  font-size: 0.95rem;
+}
+
 @media (max-width: 900px) {
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }

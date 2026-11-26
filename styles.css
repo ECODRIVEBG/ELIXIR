@@ -142,8 +142,19 @@ textarea:focus-visible {
   font-size: 1.3rem;
   letter-spacing: 0.02em;
   color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
+
 .logo-accent { color: var(--purple-600); }
+
+.logo-mascot {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+}
 
 .main-nav {
   display: flex;

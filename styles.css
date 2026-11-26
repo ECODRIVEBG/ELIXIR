@@ -545,9 +545,51 @@ textarea:focus-visible {
 }
 
 
+.mascot-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: center;
+}
+.mascot-stage {
+  background: var(--white);
+  border: 1px solid var(--purple-100);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+}
+.mascot-stage img {
+  width: 100%;
+  max-width: 340px;
+  height: auto;
+  display: block;
+}
+.mascot-text h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+  margin-bottom: 18px;
+}
+.mascot-text p {
+  color: var(--gray-700);
+  margin-bottom: 14px;
+}
+.mascot-quote {
+  margin-top: 22px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid var(--purple-100);
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--purple-700) !important;
+}
+
 @media (max-width: 900px) {
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
+  .mascot-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 760px) {

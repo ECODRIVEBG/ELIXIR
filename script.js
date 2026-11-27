@@ -21,3 +21,18 @@ if (contactForm) {
     contactForm.reset();
   });
 }
+
+const tabs = document.querySelectorAll('.tab');
+const screens = document.querySelectorAll('.screen');
+
+tabs.forEach((tab) => {
+  tab.addEventListener('click', () => {
+    tabs.forEach((t) => t.setAttribute('aria-pressed', 'false'));
+    screens.forEach((s) => {
+      s.hidden = true;
+    });
+
+    tab.setAttribute('aria-pressed', 'true');
+    document.getElementById('tela-' + tab.dataset.tela).hidden = false;
+  });
+});

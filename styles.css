@@ -147,7 +147,12 @@ textarea:focus-visible {
   gap: 10px;
 }
 
-.logo-accent { color: var(--purple-600); }
+.logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+.logo-footer .logo-img { height: 40px; }
 
 .logo-mascot {
   width: 36px;

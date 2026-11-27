@@ -131,6 +131,67 @@
                     </div>
                 </div>
             </article>
+
+            <h3 class="screens-title">Conheça as telas do sistema</h3>
+            <div class="tabs" role="group" aria-label="Telas do sistema EcoDrive">
+                <button type="button" class="tab" data-tela="home" aria-pressed="true">Página inicial</button>
+                <button type="button" class="tab" data-tela="cliente" aria-pressed="false">Área do cliente</button>
+                <button type="button" class="tab" data-tela="funcionario" aria-pressed="false">Funcionário</button>
+                <button type="button" class="tab" data-tela="admin" aria-pressed="false">Administrador</button>
+            </div>
+
+            <div class="screen" id="tela-home">
+                <img src="img/tela-home.png" alt="Página inicial da EcoDrive: título Mova-se sem parar, botões Começar agora e Já tenho conta, e a explicação do uso em três passos.">
+                <div>
+                    <h4>Página inicial</h4>
+                    <p>É a vitrine do serviço: apresenta a EcoDrive, explica como alugar e mostra onde e por quanto.</p>
+                    <ul class="case-list">
+                        <li>Passo a passo: criar a conta, adicionar saldo, retirar e pedalar</li>
+                        <li>Bicicleta ou patinete elétrico, a R$ 1,00 por minuto</li>
+                        <li>Bairros atendidos: Pinheiros, Itaim Bibi e Vila Madalena</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="screen" id="tela-cliente" hidden>
+                <img src="img/tela-cliente.png" alt="Tela Alugar da área do cliente: saldo no topo, abas Saldo, Alugar e Histórico, e um passo a passo em três etapas.">
+                <div>
+                    <h4>Área do cliente</h4>
+                    <p>Depois de entrar, o cliente vê o saldo no topo e navega por três abas: Saldo, Alugar e Histórico.</p>
+                    <ul class="case-list">
+                        <li>Em Alugar, um passo a passo de três etapas guia o aluguel</li>
+                        <li>A primeira etapa é localizar um Ponto P</li>
+                        <li>O saldo fica sempre visível no cabeçalho</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="screen" id="tela-funcionario" hidden>
+                <img src="img/tela-funcionario.png" alt="Painel de monitoramento do funcionário: quatro contadores e uma tabela de bicicletas com token, tipo, status e Ponto P.">
+                <div>
+                    <h4>Painel do funcionário</h4>
+                    <p>Tela de monitoramento da frota, para acompanhar a situação dos veículos.</p>
+                    <ul class="case-list">
+                        <li>Contadores de disponíveis, em uso, em manutenção e bateria baixa</li>
+                        <li>Abas para bicicletas, patinetes e manutenção</li>
+                        <li>Tabela com token, tipo, status e Ponto P de cada veículo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="screen" id="tela-admin" hidden>
+                <img src="img/tela-admin.png" alt="Painel do administrador, aba Cadastro de ativos: formulário para adicionar um veículo com tipo, token e Ponto P.">
+                <div>
+                    <h4>Painel do administrador</h4>
+                    <p>Além do monitoramento, o administrador cadastra veículos e gerencia os funcionários.</p>
+                    <ul class="case-list">
+                        <li>Cadastro de ativos: bicicleta ou patinete, token e Ponto P</li>
+                        <li>Cadastro, atualização e exclusão de funcionários</li>
+                        <li>Acesso a tudo que o funcionário vê</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </section>
 

@@ -215,26 +215,6 @@ textarea:focus-visible {
   margin-bottom: 0;
 }
 
-.hero-stats {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 48px;
-  padding-top: 40px;
-  border-top: 1px solid var(--gray-200);
-}
-
-.stat { display: flex; flex-direction: column; gap: 4px; }
-.stat-number {
-  font-family: var(--font-display);
-  font-size: 1.7rem;
-  font-weight: 700;
-  color: var(--ink);
-}
-.stat-label {
-  font-size: 0.85rem;
-  color: var(--gray-500);
-}
-
 .section { padding: 96px 0; }
 .section-alt { background: var(--purple-50); }
 
@@ -252,26 +232,12 @@ textarea:focus-visible {
   font-size: 1.05rem;
 }
 
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-  margin-bottom: 72px;
-}
-
 .card {
   background: var(--white);
   border: 1px solid var(--gray-100);
   border-radius: var(--radius-lg);
   padding: 32px;
   box-shadow: var(--shadow-card);
-}
-
-.card-top {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
 }
 
 .card-icon {
@@ -286,48 +252,8 @@ textarea:focus-visible {
   color: var(--purple-600);
 }
 
-.card-badge {
-  font-size: 0.72rem;
-  font-weight: 700;
-  color: var(--purple-600);
-  background: var(--purple-100);
-  padding: 4px 10px;
-  border-radius: 999px;
-}
-
 .card h3 { font-size: 1.15rem; margin-bottom: 10px; }
 .card p { color: var(--gray-500); font-size: 0.95rem; }
-
-.features-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 40px;
-  text-align: center;
-  padding-top: 48px;
-  border-top: 1px solid var(--gray-200);
-}
-
-.feature-icon {
-  display: inline-flex;
-  width: 56px;
-  height: 56px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 999px;
-  background: var(--purple-50);
-  font-size: 1.4rem;
-  margin-bottom: 16px;
-}
-
-.feature h4 { font-size: 1.05rem; margin-bottom: 10px; }
-.feature p { color: var(--gray-500); font-size: 0.92rem; max-width: 32ch; margin: 0 auto; }
-
-.cases-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 24px;
-  margin-bottom: 48px;
-}
 
 .case-card {
   background: var(--white);
@@ -339,21 +265,6 @@ textarea:focus-visible {
 .case-image {
   height: 170px;
   position: relative;
-}
-.case-image-1 { background: linear-gradient(135deg, #4c1d95, #7c3aed); }
-.case-image-2 { background: linear-gradient(135deg, #312e81, #6d28d9); }
-.case-image-3 { background: linear-gradient(135deg, #581c87, #8b5cf6); }
-
-.case-tag {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background: var(--white);
-  color: var(--purple-700);
-  font-weight: 700;
-  font-size: 0.78rem;
-  padding: 5px 12px;
-  border-radius: 999px;
 }
 
 .case-body { padding: 24px; }
@@ -541,17 +452,9 @@ textarea:focus-visible {
   object-fit: cover;
 }
 .team-body { padding: 24px; }
+
 .team-body h3 { font-size: 1.1rem; margin-bottom: 8px; }
-.team-role {
-  display: inline-block;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--purple-600);
-  background: var(--purple-50);
-  padding: 4px 12px;
-  border-radius: 999px;
-  margin-bottom: 14px;
-}
+
 .team-body p { color: var(--gray-500); font-size: 0.9rem; }
 
 .team-members {
@@ -629,7 +532,6 @@ textarea:focus-visible {
 }
 .quick-response p { margin-bottom: 6px; font-size: 0.95rem; }
 .quick-response p:last-child { margin-bottom: 0; color: rgba(255,255,255,0.85); font-size: 0.9rem; }
-.quick-response-icon { margin-right: 4px; }
 
 .contact-form {
   background: var(--white);
@@ -774,14 +676,15 @@ textarea:focus-visible {
   .contact-grid { grid-template-columns: 1fr; }
   .form-row { grid-template-columns: 1fr; }
   .mascot-grid { grid-template-columns: 1fr; }
+  .case-main { grid-template-columns: 1fr; }
+  .screen { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 760px) {
   .main-nav { display: none; }
   .header-inner .btn-small { display: none; }
   .nav-toggle { display: flex; }
-  .case-main { grid-template-columns: 1fr; }
-  .screen { grid-template-columns: 1fr; }
+
 
   .main-nav.open {
     display: flex;
@@ -798,5 +701,4 @@ textarea:focus-visible {
 
   .hero { padding: 56px 0 48px; }
   .section { padding: 64px 0; }
-  .hero-stats { gap: 32px; }
 }
